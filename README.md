@@ -7,7 +7,6 @@ Usage
 Dependencies
 How it Works
 Contributing
-License
 Installation
 To run this application locally, follow these steps:
 
@@ -55,10 +54,6 @@ The application fetches weather data from the OpenWeatherMap API based on the us
 Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your improvements.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Screenshots
 
 
 
