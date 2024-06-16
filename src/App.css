@@ -1,22 +1,20 @@
-/* App.css */
-
 /* Base styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   transition: background 0.3s, color 0.3s;
-  min-height: 100vh; /* Ensure the body covers the entire viewport height */
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(135deg, #fd8fd5, #c7e4f0); /* Default light mode background */
-  color: #333333; /* Default text color */
+  background: linear-gradient(135deg, #fd8fd5, #c7e4f0);
+  color: #333333;
 }
 
 /* Dark mode styles */
-.dark-mode body {
-  background-image: linear-gradient(135deg, #0f2027, #203a43, #2c5364) !important; /* Dark mode background */
-  color: #ffffff; /* Dark mode text color */
+body.dark-mode {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
 }
 
 /* Container styles */
@@ -25,49 +23,13 @@ body {
   padding: 20px;
   box-sizing: border-box;
   width: 100%;
-  max-width: 1200px; /* Adjust as needed for content width */
-  margin: 0 auto; /* Center align the container */
-}
-
-/* Header styles */
-.header {
-  background-color: rgba(255, 255, 255, 0.8); /* Header background */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.header h1 {
-  margin: 0;
-  padding: 10px;
-  font-size: 30px;
-  font-family: "Roboto";
-}
-
-.header button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  margin-top: 10px;
-  color: #fff;
-  background-color: #61dafb; /* Default button background color */
-  transition: background-color 0.3s;
-}
-
-.light-mode .header button {
-  background-color: #ff7eb9; /* Light mode button background color */
-}
-
-.dark-mode .header button {
-  background-color: #070936; /* Dark mode button background color */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Weather Display styles */
 .weather-display {
-  background-color: rgba(255, 255, 255, 0.8); /* Weather display background */
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -104,42 +66,38 @@ body {
   border: none;
   border-radius: 5px;
   color: #fff;
-  background-color: #61dafb; /* Default button background color */
+  background-color: #61dafb;
   transition: background-color 0.3s;
 }
 
 .light-mode .search button {
-  background-color: #ff7eb9; /* Light mode button background color */
+  background-color: #ff7eb9;
 }
 
 .dark-mode .search button {
-  background-color: #070936; /* Dark mode button background color */
+  background-color: #070936;
 }
 
 /* Media queries for responsive design */
-
-/* Tablets (landscape and portrait) */
 @media (min-width: 768px) {
   .header {
-    padding: 30px; /* Increase padding for tablets */
+    padding: 30px;
   }
-  
+
   .weather-display {
-    padding: 30px; /* Increase padding for tablets */
+    padding: 30px;
   }
 }
 
-/* Desktops and larger screens */
 @media (min-width: 1024px) {
   .header,
   .weather-display,
   .search {
-    margin: 20px; /* Add margin for spacing between sections */
-    padding: 40px; /* Increase padding for larger screens */
+    margin: 20px;
+    padding: 40px;
   }
 }
 
-/* Adjustments for smaller screens (like mobile phones) */
 @media (max-width: 767px) {
   .header h1 {
     font-size: 24px;
@@ -151,6 +109,6 @@ body {
   }
 
   .weather-display {
-    padding: 10px; /* Reduce padding for smaller screens */
+    padding: 10px;
   }
 }

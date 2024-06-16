@@ -1,5 +1,3 @@
-/* Header.css */
-
 .app-header {
   padding: 20px;
   text-align: center;
@@ -16,12 +14,22 @@
   color: #ffffff;
 }
 
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.toggle-container span {
+  margin-right: 10px;
+}
+
 .switch {
   position: relative;
   display: inline-block;
   width: 60px;
   height: 34px;
-  margin-left: 20px;
 }
 
 .switch input {
@@ -66,4 +74,18 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.span-element {
+  font-size: 15px;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+.light-mode .span-element {
+  color: #333333;
+}
+
+.dark-mode .span-element {
+  color: #ffffff;
 }
